@@ -1,0 +1,182 @@
+/* montserrat alternates */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&display=swap');
+
+/* geral */
+:root {
+    --laranja: #FF9F0F;
+    --cinza: #C4C4C4;
+    --cinza-claro: #ECEAEA;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.grey {
+    color: var(--cinza);
+}
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+button {
+    font-size: 1.05rem;
+    border: none;
+    cursor: pointer;
+}
+.clickable {
+    cursor: pointer;
+}
+.button {
+    color: white;
+    padding: 0.25em 0.5em;
+    border-radius: 0.75em;
+    background-color: var(--laranja);
+
+    transition: all 0.2s;
+    transform: scale(1.0);
+}
+.button:hover {
+    transform: scale(1.2);
+}
+.img_container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* menu */
+nav {
+    position: fixed;
+    z-index: 100;
+    height: 60px;
+    top:0;
+    left:0;
+    background-color: var(--laranja);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+.menu_logo{
+    height: 60px;
+    width: auto;
+}
+.menu_links{
+    padding-right: 2em;
+}
+#menu_desktop{
+    position: absolute;
+    visibility: hidden;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 20%;
+}
+#sidebar {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--laranja);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    transition: all 0.3s;
+    transform: translateY(-100%);
+}
+#sidebar.active{
+    transform: translateY(0%);
+}
+@media screen and (min-width: 870px) {
+    #menu_desktop{
+        position: relative;
+        visibility: visible;
+    }
+    #menu_mobile{
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+/* HERO */
+header {
+    margin-top: 75px;
+    width: 100%;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    background-image: url(/images/imagem-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+
+}
+.hero {
+    text-align: center;
+    width: min(70%, 48em);
+}
+
+/* RECEITAS */
+.title {
+    margin: 2.5em auto;
+    text-align: center;
+}
+.receitas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.receitas .img_container {
+    width: 250px;
+    height: 250px;
+    background-color: var(--cinza);
+}
+.receitas_wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    overflow-x: auto;
+    column-gap: 2.5em;
+    row-gap: 2.5em;
+}
+.receita_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--cinza-claro);
+    padding: 1em;
+    border-radius: 0.25em;
+}
+
+/* NEGOCIO */
+.negocio {
+    width: 90%;
+    height: 30vh;
+    margin: 4em auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cinza-claro);
+}
