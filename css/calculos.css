@@ -4,6 +4,7 @@
     text-align: center;
 }
 .subtitle {
+    margin-top: 1em;
     margin-bottom: 0.5em;
 }
 main {
@@ -12,11 +13,12 @@ main {
     flex-direction: column;
     align-items: center;
 }
-.receita {
+.resultados_wrapper {
     line-height: 2em;
     width: min(80%, 56em);
+    padding-bottom: 3em;
 }
 table {
-    width: min(80%, 56em);
+    width: 100%;
     border: 1px solid black;
 }
