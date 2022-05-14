@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roscas Osório</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/calculos.css">
+</head>
+<body>
+    
+    <!-- MENU -->
+    <nav>
+        <a href="/index.html">
+            <img class="menu_logo" src="/images/Logo.png" alt="Roscas Osorio">
+        </a>
+
+        <!-- DESKTOP -->
+        <div class="menu_links" id="menu_desktop">
+            <a href="/index.html">Home</a>
+            <a href="/index.html#receitas"> Receitas </a>
+        </div>
+
+        <!-- MOBILE -->
+        <div class="menu_links clickable" id="menu_mobile" onClick='toggleSidebar()'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <a href="/index.html">Home</a>
+            <a href="/index.html#receitas"> Receitas </a>
+            <p onClick='toggleSidebar()' class="clickable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                    <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                </svg>
+            </p>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <h1 class="title">CALCULE O GASTO MÉDIO DO ESTABELECIMENTO</h1>
+
+        <form method="POST" action="calculos.php" class="form">
+
+            <section class="sessao_form">
+                <h2>Gastos com funcionários</h2>
+                
+                <div class="flex-grande">
+                    <div class="flex-medio">
+                        <label for="quant_coz">Quantidade de Cozinheiros</label>
+                        <input name="quant_coz" type="text" value="0">
+                    </div>
+                    <div>
+                        <label for="quant_coz">Salario Cozinheiros</label>
+                        <input name="quant_coz" type="text" value="0">
+                    </div>
+                </div>
+
+                <div class="flex-grande">
+                    <div class="flex-medio">
+                        <label for="quant_coz">Quantidade de Caixas</label>
+                        <input name="quant_coz" type="text" value="0">
+                    </div>
+                    <div>
+                        <label for="quant_coz">Salario Caixas</label>
+                        <input name="quant_coz" type="text" value="0">
+                    </div>
+                </div>
+
+                <div class="flex-grande">
+                    <div class="flex-medio">
+                        <label for="quant_coz">Quantidade de Func. limpeza</label>
+                        <input name="quant_coz" type="text" value="0">
+                    </div>
+                    <div>
+                        <label for="quant_coz">Salario Func. limpeza</label>
+                        <input name="quant_coz" type="text" value="0">
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="sessao_form">
+                <h2>Gastos com o Estabelecimento</h2>
+
+                <div class="flex-medio">
+                    <label for="quant_coz">Conta de água</label>
+                    <input name="quant_coz" type="text" value="0">
+                </div>
+                <div>
+                    <label for="quant_coz">Conta de Luz</label>
+                    <input name="quant_coz" type="text" value="0">
+                </div>
+                <div>
+                    <label for="quant_coz">Aluguel</label>
+                    <input name="quant_coz" type="text" value="0">
+                </div>
+
+            </section>
+
+            <section class="sessao_form">
+                <h2>Gastos com Ingredientes</h2>
+
+                <div class="flex-medio">
+                    <label for="quant_coz">Quantidade de Roscas</label>
+                    <input name="quant_coz" type="text" value="0">
+                </div>
+                <div class="flex-medio">
+                    <label for="quant_coz">Quantidade de Cacetinho</label>
+                    <input name="quant_coz" type="text" value="0">
+                </div>
+                <div class="flex-medio">
+                    <label for="quant_coz">Quantidade de Pães de Queijo</label>
+                    <input name="quant_coz" type="text" value="0">
+                </div>
+                <div class="flex-medio">
+                    <label for="quant_coz">Quantidade de Sonhos</label>
+                    <input name="quant_coz" type="text" value="0">
+                </div>
+                <div class="flex-medio">
+                    <label for="quant_coz">Quantidade de Pães Doce</label>
+                    <input name="quant_coz" type="text" value="0">
+                </div>
+
+            </section>
+
+            <section class="sessao_form">
+                <h2>Margem de Lucro</h2>
+
+                <div class="flex-medio">
+                    <label for="quant_coz">Margem de Lucro</label>
+                    <input name="quant_coz" type="text" value="10">
+                </div>
+            </section>
+
+
+            <input type="submit" value="Calcular" class="button">
+        </form>
+    </main>
+</body>
+</html>
