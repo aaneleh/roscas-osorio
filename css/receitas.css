@@ -1,9 +1,10 @@
-/* RECEITAS */
+/* geral */
 .title {
-    margin: 2.5em auto  1.5em;
+    margin: 2.5em auto  1em;
     text-align: center;
 }
 .subtitle {
+    margin-top: 1em;
     margin-bottom: 0.5em;
 }
 main {
@@ -12,11 +13,63 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+/* paginas de receita*/
 .receita {
     line-height: 2em;
     width: min(80%, 56em);
 }
-table {
+
+/* form */
+.sessao_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.form {
+    padding-bottom: 2em;
+    width: min(90%, 50em);
+}
+.form_submit {
+    margin: 4em auto;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* menor tela possivel */
+.flex-medio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+}
+
+/* telas maiores */
+@media screen and (min-width: 800px) {
+    .flex-medio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* calculos */
+.resultados_wrapper {
+    line-height: 2em;
     width: min(80%, 56em);
+    padding-bottom: 3em;
+}
+table {
+    width: 100%;
     border: 1px solid black;
+}
+
+/* receita com images*/
+.imagem_pequena {
+    width: 5em;
+    height: auto;
+}
+.receita_linha {
+    display: inline-flex;
+    align-items: center;
 }

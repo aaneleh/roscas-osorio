@@ -92,49 +92,54 @@
             <table>
                 <tr>
                     <td class="italic">Ingrediente</td>
-                    <td class="italic">Mercado 1></td>
-                    <td class="italic">Mercado 2></td>
-                    <td class="italic">Mercado 3></td>
+                    <td class="italic">Mercado 1</td>
+                    <td class="italic">Mercado 2</td>
+                    <td class="italic">Mercado 3</td>
                 </tr>
                 <tr>
                     <td class="italic"> Polvilho </td>
-                    <td> <?php echo $polvilho * 10.50; $total1 = $polvilho *10.50 ?> R$  </td>
-                    <td> <?php echo $polvilho * 10.00; $total2 = $polvilho *10.00 ?> R$  </td>
-                    <td> <?php echo $polvilho * 11.00; $total3 = $polvilho *11.00 ?> R$  </td>
+                    <td> R$<?php echo $polvilho * 10.50; $total1 = $polvilho *10.50 ?> </td>
+                    <td> R$<?php echo $polvilho * 10.00; $total2 = $polvilho *10.00 ?> </td>
+                    <td> R$<?php echo $polvilho * 11.00; $total3 = $polvilho *11.00 ?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Açúcar   </td>
-                    <td> <?php echo $acucar * 1.00; $total1+= $acucar * 1.00 ?> R$    </td>
-                    <td> <?php echo $acucar * 1.50; $total2+= $acucar * 1.50 ?> R$    </td>
-                    <td> <?php echo $acucar * 2.00; $total3+= $acucar * 2.00 ?> R$    </td>
+                    <td> R$<?php echo $acucar * 1.00; $total1+= $acucar * 1.00 ?> </td>
+                    <td> R$<?php echo $acucar * 1.50; $total2+= $acucar * 1.50 ?> </td>
+                    <td> R$<?php echo $acucar * 2.00; $total3+= $acucar * 2.00 ?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Banha    </td>
-                    <td> <?php echo $banha * 0.75; $total1+= $banha * 0.75 ?> R$     </td>
-                    <td> <?php echo $banha * 0.50; $total2+= $banha * 0.50 ?> R$     </td>
-                    <td> <?php echo $banha * 0.75; $total3+= $banha * 0.75 ?> R$     </td>
+                    <td> R$<?php echo $banha * 0.75; $total1+= $banha * 0.75 ?> </td>
+                    <td> R$<?php echo $banha * 0.50; $total2+= $banha * 0.50 ?> </td>
+                    <td> R$<?php echo $banha * 0.75; $total3+= $banha * 0.75 ?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Sal      </td>
-                    <td> <?php echo $sal * 0.02; $total1+= $sal * 0.02 ?> R$       </td>
-                    <td> <?php echo $sal * 0.03; $total2+= $sal * 0.02 ?> R$       </td>
-                    <td> <?php echo $sal * 0.02; $total3+= $sal * 0.02 ?> R$       </td>
+                    <td> R$<?php echo $sal * 0.02; $total1+= $sal * 0.02 ?> </td>
+                    <td> R$<?php echo $sal * 0.03; $total2+= $sal * 0.02 ?> </td>
+                    <td> R$<?php echo $sal * 0.02; $total3+= $sal * 0.02 ?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Ovos     </td>
-                    <td> <?php echo $ovos * 0.75; $total1+= $ovos * 0.75?> R$      </td>
-                    <td> <?php echo $ovos * 0.60; $total2+= $ovos * 0.60?> R$      </td>
-                    <td> <?php echo $ovos * 0.50; $total3+= $ovos * 0.50?> R$      </td>
+                    <td> R$<?php echo $ovos * 0.75; $total1+= $ovos * 0.75?> </td>
+                    <td> R$<?php echo $ovos * 0.60; $total2+= $ovos * 0.60?> </td>
+                    <td> R$<?php echo $ovos * 0.50; $total3+= $ovos * 0.50?> </td>
                 </tr>
                 <tr>
                     <td>Total</td>
-                    <td> <?php echo $total1 ?> R$</td>
-                    <td> <?php echo $total2 ?> R$</td>
-                    <td> <?php echo $total3 ?> R$</td>
+                    <td> R$R$ <?php echo round($total1,2) ?> </td>
+                    <td> R$R$ <?php echo round($total2,2) ?> </td>
+                    <td> R$R$ <?php echo round($total3,2) ?> </td>
                 </tr>
             </table>
             <br><br>
         </div>
+
+        <a href="<?php echo "/testes/rosca_visual.php?quant=$rendimento"; ?>" class="button clickable">Ver com Imagens</a>
+
+        <br><br><br>
+
     </main>
 </body>
 </html>
