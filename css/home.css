@@ -14,11 +14,11 @@ header {
     background-position: center;
     background-size: cover;
     background-color: black;
-
 }
 .hero {
-    text-align: center;
     width: min(70%, 48em);
+    text-align: center;
+    line-height: 1.5em;
 }
 
 /* HISTORIA */
@@ -30,6 +30,7 @@ header {
 .historia_wrapper div {
     width: min(70%, 56em);
     text-align: justify;
+    line-height: 1.5em;
 }
 
 /* RECEITAS */
