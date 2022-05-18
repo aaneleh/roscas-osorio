@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roscas Osório</title>
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <!-- MENU -->
     <nav>
-        <a href="#hero">
+        <a href="index.html#hero">
             <img class="menu_logo" src="images/Logo.png" alt="Roscas Osorio">
         </a>
 
         <!-- DESKTOP -->
         <div class="menu_links" id="menu_desktop">
-            <a href="#historia">História</a>
-            <a href="#receitas">Receitas</a>
-            <a href="#negocio">Seu negócio</a>
+            <a href="index.html#historia">História</a>
+            <a href="index.html#receitas">Receitas</a>
+            <a href="index.html#negocio">Seu negócio</a>
         </div>
 
         <!-- MOBILE -->
@@ -29,9 +29,9 @@
             </svg>
         </div>
         <div class="sidebar" id="sidebar">
-            <a href="#historia">História</a>
-            <a href="#receitas">Receitas</a>
-            <a href="#negocio">Seu negócio</a>
+            <a href="index.html#historia">História</a>
+            <a href="index.html#receitas">Receitas</a>
+            <a href="index.html#negocio">Seu negócio</a>
             <p onClick='toggleSidebar()' class="clickable">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
@@ -82,7 +82,7 @@
                 <h3>Rosca de Polvilho</h3>
                 <form>
                     <p>Rendimento desejado:</p> <br>
-                    <input type="number" id="rosca_quant">
+                    <input type="number" id="rosca_quant" value="10">
                 </form>
                 <button class="button" onclick='gotoRosca()'>Ver Receita</button>
             </div>
@@ -90,12 +90,12 @@
             <!-- PÃO DE QUEIJO -->
             <div class="receita_card">
                 <div class="img_container">
-                    <img src="images/paodequeijo.png" alt="Rosquinhas de polvilho">
+                    <img src="images/paodequeijo.png" alt="Rosquinhas de polvilho" value="10">
                 </div>
                 <h3>Pão de Queijo</h3>
                 <form>
                     <p>Rendimento desejado:</p> <br>
-                    <input type="number" name="queijo_quant" id="queijo_quant">
+                    <input type="number" name="queijo_quant" id="queijo_quant" value="10">
                 </form>
                 <button class="button" onclick='gotoQueijo()'>Ver Receita</button>
             </div>
@@ -108,7 +108,7 @@
                 <h3>Cacetinho</h3>
                 <form>
                     <p>Rendimento desejado:</p> <br>
-                    <input type="number" name="cacetinho_quant" id="cacetinho_quant">
+                    <input type="number" name="cacetinho_quant" id="cacetinho_quant" value="10">
                 </form>
                 <button class="button" onclick='gotoCacetinho()'>Ver Receita</button>
             </div>
@@ -121,7 +121,7 @@
                 <h3> Sonho </h3>
                 <form>
                     <p>Rendimento desejado:</p> <br>
-                    <input type="number" name="sonho_quant" id="sonho_quant">
+                    <input type="number" name="sonho_quant" id="sonho_quant" value="10">
                 </form>
                 <button class="button" onclick='gotoSonho()'>Ver Receita</button>
             </div>
@@ -134,7 +134,7 @@
                 <h3> Pão Doce </h3>
                 <form>
                     <p>Rendimento desejado:</p> <br>
-                    <input type="number" name="doce_quant" id="doce_quant">
+                    <input type="number" name="doce_quant" id="doce_quant" value="10">
                 </form>
                 <button class="button" onclick='gotoDoce()'>Ver Receita</button>
             </div>
@@ -147,7 +147,7 @@
     <section class="negocio" id="negocio">
         <h1>QUER ABRIR SEU PRÓPRIO NEGÓCIO?</h1>
         <p>Podemos te ajudar!</p>
-        <a href="/pages/form.html" class="button">Clique aqui!</a>
+        <a href="form.html" class="button">Clique aqui!</a>
     </section>
 
     <script src="script.js"></script>

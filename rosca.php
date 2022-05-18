@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roscas Osório</title>
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/receitas.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/receitas.css">
 </head>
 <body>
-    
     <!-- MENU -->
     <nav>
         <a href="/index.html">
-            <img class="menu_logo" src="/images/Logo.png" alt="Roscas Osorio">
+            <img class="menu_logo" src="images/Logo.png" alt="Roscas Osorio">
         </a>
 
         <!-- DESKTOP -->
         <div class="menu_links" id="menu_desktop">
             <a href="/index.html">Home</a>
-            <a href="#negocio">Seu negócio</a>
+            <a href="form.html">Seu negócio</a>
         </div>
 
         <!-- MOBILE -->
@@ -29,8 +28,8 @@
             </svg>
         </div>
         <div class="sidebar" id="sidebar">
-            <a href="/index.html">Home</a>
-            <a href="#negocio">Seu negócio</a>
+            <a href="index.html">Home</a>
+            <a href="form.html">Seu negócio</a>
             <p onClick='toggleSidebar()' class="clickable">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
@@ -42,8 +41,8 @@
 
     <?php
         if(isset($_GET['quant']) && !empty($_GET['quant'])) {
-            $ovos = round($_GET['quant'] / 6.6);
-            $polvilho = round($_GET['quant'] / 6.6);
+            $ovos = ceil($_GET['quant'] / 6.6);
+            $polvilho = ceil($_GET['quant'] / 6.6);
         } else {
             $ovos = 3;
             $polvilho = 3;
@@ -128,18 +127,21 @@
                 </tr>
                 <tr>
                     <td>Total</td>
-                    <td> R$R$ <?php echo round($total1,2) ?> </td>
-                    <td> R$R$ <?php echo round($total2,2) ?> </td>
-                    <td> R$R$ <?php echo round($total3,2) ?> </td>
+                    <td> R$ <?php echo round($total1,2) ?> </td>
+                    <td> R$ <?php echo round($total2,2) ?> </td>
+                    <td> R$ <?php echo round($total3,2) ?> </td>
                 </tr>
             </table>
             <br><br>
         </div>
 
-        <a href="<?php echo "/testes/rosca_visual.php?quant=$rendimento"; ?>" class="button clickable">Ver com Imagens</a>
+        <a href="<?php echo "rosca_visual.php?quant=$rendimento"; ?>" class="button clickable">Ver com Imagens</a>
 
         <br><br><br>
 
     </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

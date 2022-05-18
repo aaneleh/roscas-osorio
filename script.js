@@ -9,7 +9,7 @@ function gotoRosca(){
     if(rendimento == ""){
         alert('valor inválido');
     } else {
-        window.location = `/pages/rosca.php?quant=${rendimento}`;
+        window.location = `rosca.php?quant=${rendimento}`;
     }
 }
 function gotoQueijo(){
@@ -17,7 +17,7 @@ function gotoQueijo(){
     if(rendimento == ""){
         alert('valor inválido');
     } else {
-        window.location = `/pages/queijo.php?quant=${rendimento}`;
+        window.location = `queijo.php?quant=${rendimento}`;
     }
 }
 function gotoCacetinho(){
@@ -25,7 +25,7 @@ function gotoCacetinho(){
     if(rendimento == ""){
         alert('valor inválido');
     } else {
-        window.location = `/pages/cacetinho.php?quant=${rendimento}`;
+        window.location = `cacetinho.php?quant=${rendimento}`;
     }
 }
 function gotoSonho(){
@@ -33,7 +33,7 @@ function gotoSonho(){
     if(rendimento == ""){
         alert('valor inválido');
     } else {
-        window.location = `/pages/sonho.php?quant=${rendimento}`;
+        window.location = `sonho.php?quant=${rendimento}`;
     }
 }
 function gotoDoce(){
@@ -41,6 +41,6 @@ function gotoDoce(){
     if(rendimento == ""){
         alert('valor inválido');
     } else {
-        window.location = `/pages/doce.php?quant=${rendimento}`;
+        window.location = `doce.php?quant=${rendimento}`;
     }
 }

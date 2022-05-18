@@ -9,7 +9,7 @@ header {
     align-items: center;
     color: #fff;
 
-    background-image: url(/images/imagem-hero.jpg);
+    background-image: url(imagem-hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

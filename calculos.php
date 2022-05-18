@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roscas Osório</title>
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/calculos.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/receitas.css">
 </head>
 <body>
     <!-- MENU -->
     <nav>
-        <a href="/index.html">
-            <img class="menu_logo" src="/images/Logo.png" alt="Roscas Osorio">
+        <a href="index.html">
+            <img class="menu_logo" src="images/Logo.png" alt="Roscas Osorio">
         </a>
 
         <!-- DESKTOP -->
         <div class="menu_links" id="menu_desktop">
-            <a href="/index.html">Home</a>
-            <a href="/index.html#receitas"> Receitas </a>
+            <a href="index.html">Home</a>
+            <a href="index.html#receitas"> Receitas </a>
         </div>
 
         <!-- MOBILE -->
@@ -28,8 +28,8 @@
             </svg>
         </div>
         <div class="sidebar" id="sidebar">
-            <a href="/index.html">Home</a>
-            <a href="/index.html#receitas"> Receitas </a>
+            <a href="index.html">Home</a>
+            <a href="index.html#receitas"> Receitas </a>
             <p onClick='toggleSidebar()' class="clickable">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
@@ -264,7 +264,6 @@
                         <td class="italic">Receita total</td>
                         <td class="italic">Custo total</td>
                         <td class="italic bold">Lucro</td>
-
                     </tr>
                     <tr>
                         <td>R$ <?php echo $receitaTotal; ?></td>
@@ -276,5 +275,8 @@
         </div>
 
     </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
