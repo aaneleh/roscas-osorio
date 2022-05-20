@@ -76,7 +76,7 @@
                 <li> <?php echo $sal ?> g de sal </li>
                 <li> <?php echo $trigo ?> g de trigo </li>
                 <li> <?php echo $margarina ?> g de margarina </li>
-                <li> <?php echo $copo ?> de um copo de água </li>
+                <li> <?php echo $copo ?> copo(s) de água </li>
 
             </ul>
             <br>
