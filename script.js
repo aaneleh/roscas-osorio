@@ -30,11 +30,11 @@ function gotoSonho(){
         window.location = `sonho.php?quant=${rendimento}`;
     }
 }
-function gotoDoce(){
-    const rendimento = document.getElementById('doce_quant').value;
+function gotoVirada(){
+    const rendimento = document.getElementById('virada_quant').value;
     if(rendimento == ""){
         alert('valor inválido');
     } else {
-        window.location = `doce.php?quant=${rendimento}`;
+        window.location = `virada.php?quant=${rendimento}`;
     }
 }
