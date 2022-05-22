@@ -138,10 +138,8 @@
         <a href="<?php echo "rosca_visual.php?quant=$rendimento"; ?>" class="button clickable">Ver com Imagens</a>
 
         <br><br><br>
-
     </main>
 
-    <script src="script.js"></script>
-
+    <script src="sidebar.js"></script>
 </body>
 </html>

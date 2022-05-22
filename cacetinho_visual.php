@@ -263,5 +263,6 @@
             <br><br>
         </div>
     </main>
+    <script src="sidebar.js"></script>
 </body>
 </html>

@@ -42,11 +42,10 @@
 
     <?php
         if(isset($_GET['quant']) && !empty($_GET['quant'])) {
-            $ovo = round($_GET['quant'] / 7.5);
+            $ovo = ceil($_GET['quant'] / 7.5);
         } else {
             $ovo = 8;
         }
-        $ovo = ceil($_GET['quant'] / 7.5);
         $doce = $ovo * 125;
         $azedo = $ovo * 62.5;
         $sal = $ovo * 1.5;   
@@ -160,5 +159,6 @@
         <br><br><br>
 
     </main>
+    <script src="sidebar.js"></script>
 </body>
 </html>

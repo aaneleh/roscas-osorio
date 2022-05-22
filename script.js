@@ -1,9 +1,3 @@
-/* SIDEBAR */
-const sidebar = document.getElementById('sidebar')
-function toggleSidebar(){
-    sidebar.classList.toggle('active');
-}
-
 function gotoRosca(){
     const rendimento = document.getElementById('rosca_quant').value;
     if(rendimento == ""){

@@ -165,5 +165,6 @@
         <br><br><br>
 
     </main>
+    <script src="sidebar.js"></script>
 </body>
 </html>

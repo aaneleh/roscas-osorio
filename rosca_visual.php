@@ -288,6 +288,6 @@
         </div>
     </main>
 
-    <script src="/index/script.js"></script>
+    <script src="sidebar.js"></script>
 </body>
 </html>

@@ -276,7 +276,6 @@
 
     </main>
 
-    <script src="script.js"></script>
-
+    <script src="sidebar.js"></script>
 </body>
 </html>
