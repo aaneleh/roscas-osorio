@@ -109,21 +109,21 @@
                 </tr>
                 <tr>
                     <td class="italic"> Fermento </td> 
-                    <td> R$<?php echo $fermento * 10.50; $total1 = $fermento *10.50 ?> </td>
-                    <td> R$<?php echo $fermento * 10.00; $total2 = $fermento *10.00 ?> </td>
-                    <td> R$<?php echo $fermento * 11.00; $total3 = $fermento *11.00 ?> </td>
+                    <td> R$<?php echo ($fermento / 10) * 7.00; $total1 = ($fermento / 10) * 7.00 ?> </td>
+                    <td> R$<?php echo ($fermento / 10) * 6.00; $total2 = ($fermento / 10) * 6.00 ?> </td>
+                    <td> R$<?php echo ($fermento / 10) * 6.50; $total3 = ($fermento / 10) * 6.50 ?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Açúcar   </td>
-                    <td> R$<?php echo $acucar * 1.00; $total1+= $acucar * 1.00 ?> </td>
-                    <td> R$<?php echo $acucar * 1.50; $total2+= $acucar * 1.50 ?> </td>
-                    <td> R$<?php echo $acucar * 2.00; $total3+= $acucar * 2.00 ?> </td>
+                    <td> R$<?php echo $acucar * 0.10; $total1+= $acucar * 0.10 ?> </td>
+                    <td> R$<?php echo $acucar * 0.15; $total2+= $acucar * 0.15 ?> </td>
+                    <td> R$<?php echo $acucar * 0.20; $total3+= $acucar * 0.20 ?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Farinha de Trigo    </td>
-                    <td> R$<?php echo $trigo * 0.75; $total1+= $trigo * 0.75 ?> </td>
-                    <td> R$<?php echo $trigo * 0.50; $total2+= $trigo * 0.50 ?> </td>
-                    <td> R$<?php echo $trigo * 0.75; $total3+= $trigo * 0.75 ?> </td>
+                    <td> R$<?php echo round(($trigo / 1000)* 7.75, 2); $total1+= round(($trigo / 1000)* 7.75, 2) ?> </td>
+                    <td> R$<?php echo round(($trigo / 1000)* 8.75, 2); $total2+= round(($trigo / 1000)* 8.75, 2) ?> </td>
+                    <td> R$<?php echo round(($trigo / 1000)* 7.20, 2); $total3+= round(($trigo / 1000)* 7.20, 2) ?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Sal      </td>

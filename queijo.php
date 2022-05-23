@@ -110,15 +110,15 @@
                 </tr>
                 <tr>
                     <td class="italic"> Polvilho Doce   </td>
-                    <td> R$<?php echo $doce *1.50 ; $total1+= $doce * 1.50  ?> </td>
-                    <td> R$<?php echo $doce *1.75 ; $total2+= $doce * 1.75 ?> </td>
-                    <td> R$<?php echo $doce *1.38 ; $total3+= $doce * 1.38 ?> </td>
+                    <td> R$<?php echo round(($doce / 500) * 9.30,2) ; $total1+= round(($doce / 500) * 9.30,2)  ?> </td>
+                    <td> R$<?php echo round(($doce / 500) * 8.50,2) ; $total2+= round(($doce / 500) * 8.50,2) ?> </td>
+                    <td> R$<?php echo round(($doce / 500) * 7.80,2) ; $total3+= round(($doce / 500) * 7.80,2) ?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Polvilho Azedo    </td>
-                    <td> R$<?php echo $azedo * 1.05; $total1+= $azedo * 1.05 ?> </td>
-                    <td> R$<?php echo $azedo * 1.14; $total2+= $azedo * 1.14 ?> </td>
-                    <td> R$<?php echo $azedo * 1.23; $total3+= $azedo * 1.23 ?> </td>
+                    <td> R$<?php echo round(($azedo / 1000) * 10.50,2); $total1+= ($azedo / 1000) * 10.50 ?> </td>
+                    <td> R$<?php echo round(($azedo / 1000) * 10.00,2); $total2+= ($azedo / 1000) * 10.00 ?> </td>
+                    <td> R$<?php echo round(($azedo / 1000) * 11.00,2); $total3+= ($azedo / 1000) * 11.00 ?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Sal      </td>
@@ -128,9 +128,9 @@
                 </tr>
                 <tr>
                     <td class="italic"> Manteiga     </td>
-                    <td> R$<?php echo $manteiga * 1.25; $total1+= $manteiga * 1.25?> </td>
-                    <td> R$<?php echo $manteiga * 1.63; $total2+= $manteiga * 1.63?> </td>
-                    <td> R$<?php echo $manteiga * 1.75; $total3+= $manteiga * 1.75?> </td>
+                    <td> R$<?php echo $manteiga * 0.25; $total1+= $manteiga * 0.25?> </td>
+                    <td> R$<?php echo $manteiga * 0.43; $total2+= $manteiga * 0.43?> </td>
+                    <td> R$<?php echo $manteiga * 0.35; $total3+= $manteiga * 0.35?> </td>
                 </tr>
                 <tr>
                     <td class="italic"> Leite      </td>
@@ -140,9 +140,9 @@
                 </tr>
                 <tr>
                     <td class="italic"> Queijo      </td>
-                    <td> R$<?php echo $queijo * 5.70; $total1+= $queijo * 5.70?> </td>
-                    <td> R$<?php echo $queijo * 5,70; $total2+= $queijo * 5.70?> </td>
-                    <td> R$<?php echo $queijo * 5.50; $total3+= $queijo * 5.50?> </td>
+                    <td> R$<?php echo ($queijo / 400) * 28.20; $total1+= ($queijo / 400) * 28.20?> </td>
+                    <td> R$<?php echo ($queijo / 400) * 29.00; $total2+= ($queijo / 400) * 29.00?> </td>
+                    <td> R$<?php echo ($queijo / 400) * 27.90; $total3+= ($queijo / 400) * 27.90?> </td>
                 </tr>
                 <tr>
                     <td>Total</td>

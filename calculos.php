@@ -28,8 +28,8 @@
             </svg>
         </div>
         <div class="sidebar" id="sidebar">
-            <a href="index.html">Home</a>
-            <a href="index.html#receitas"> Receitas </a>
+            <a onClick='toggleSidebar()' href="../index.html">Home</a>
+            <a onClick='toggleSidebar()' href="../index.html#receitas"> Receitas </a>
             <p onClick='toggleSidebar()' class="clickable">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
@@ -89,22 +89,22 @@
                     $cacetinho_quant = $_POST['quant_cacetinho'];
                     $queijo_quant = $_POST['quant_queijo'];
                     $sonho_quant = $_POST['quant_sonho'];
-                    $doce_quant = $_POST['quant_doce'];
+                    $virada_quant = $_POST['quant_virada'];
 
                     $rosca_mes = $rosca_quant * 1.84;
-                    $cacetinho_mes = $cacetinho_quant * 1.00;
-                    $queijo_mes = $queijo_quant * 1.00;
-                    $sonho_mes = $sonho_quant * 1.00;
-                    $doce_mes = $doce_quant * 1.86;
+                    $cacetinho_mes = $cacetinho_quant * 0.70;
+                    $queijo_mes = $queijo_quant * 3.13;
+                    $sonho_mes = $sonho_quant * 0.25;
+                    $virada_mes = $virada_quant * 0.45;
 
-                    $custosVariaveis = $rosca_mes + $cacetinho_mes + $queijo_mes + $sonho_mes + $doce_mes;
+                    $custosVariaveis = $rosca_mes + $cacetinho_mes + $queijo_mes + $sonho_mes + $virada_mes;
                 ?>
 
                 <table>
                     <tr>
                         <td class="italic">Receitas</td>
                         <td class="italic">Quantidade por mês</td>
-                        <td class="italic">Menos custo p/ unidade</td>
+                        <td class="italic">Menor custo p/ unidade</td>
                         <td class="italic">Custo total p/ mês do produto</td>
                     </tr>
 
@@ -117,26 +117,26 @@
                     <tr>
                         <td class="italic"> Cacetinho </td>
                         <td> <?php echo $cacetinho_quant; ?> </td>
-                        <td> R$ 1,00 </td>
+                        <td> R$ 0,70 </td>
                         <td> R$ <?php echo $cacetinho_mes; ?> </td>
                     </tr>
                     <tr>
                         <td class="italic"> Pão de Queijo </td>
                         <td> <?php echo $queijo_quant; ?> </td>
-                        <td> R$ 1,00 </td>
+                        <td> R$ 3,13 </td>
                         <td> R$ <?php echo $queijo_mes; ?> </td>
                     </tr>
                     <tr>
                         <td class="italic"> Sonho </td>
                         <td> <?php echo $sonho_quant; ?> </td>
-                        <td> R$ 1,00 </td>
+                        <td> R$ 0,25 </td>                                    <!------------------ ARRUMAR --------------->
                         <td> R$ <?php echo $sonho_mes; ?> </td>
                     </tr>
                     <tr>
-                        <td class="italic"> Pão Doce </td>
-                        <td> <?php echo $doce_quant; ?> </td>
-                        <td> R$ 1,86 </td>
-                        <td> R$ <?php echo $doce_mes; ?> </td>
+                        <td class="italic"> Cueca virada </td>
+                        <td> <?php echo $virada_quant; ?> </td>
+                        <td> R$ 0,45 </td>
+                        <td> R$ <?php echo $virada_mes; ?> </td>
                     </tr>
 
                 </table>
@@ -185,7 +185,7 @@
                     $cacetinho_preco = arredondar( ($cacetinho_mes + ( $custosFixos/5 ) ) / $cacetinho_quant);
                     $queijo_preco = arredondar( ($queijo_mes + ( $custosFixos/5 ) ) / $queijo_quant);
                     $sonho_preco = arredondar( ($sonho_mes + ( $custosFixos/5 ) ) / $sonho_quant);
-                    $doce_preco = arredondar( ($doce_mes + ( $custosFixos/5 ) ) / $doce_quant);
+                    $virada_preco = arredondar( ($virada_mes + ( $custosFixos/5 ) ) / $virada_quant);
 
                     //preços com margem de lucro
                     $porcentagem_lucro = $_POST['lucro'];
@@ -195,13 +195,13 @@
                     $cacetinho_preco2 = arredondar ($cacetinho_preco + ($cacetinho_preco * $decimal_lucro));
                     $queijo_preco2 = arredondar($queijo_preco + ($queijo_preco * $decimal_lucro) );
                     $sonho_preco2 = arredondar($sonho_preco + ($sonho_preco * $decimal_lucro) );
-                    $doce_preco2 = arredondar($doce_preco + ($doce_preco * $decimal_lucro) );
+                    $virada_preco2 = arredondar($virada_preco + ($virada_preco * $decimal_lucro) );
 
                     $rosca_receita = arredondar($rosca_quant * $rosca_preco2);
                     $cacetinho_receita = arredondar($cacetinho_quant * $cacetinho_preco2);
                     $queijo_receita = arredondar($queijo_quant * $queijo_preco2);
                     $sonho_receita = arredondar($sonho_quant * $sonho_preco2);
-                    $doce_receita = arredondar($doce_quant * $doce_preco2);
+                    $virada_receita = arredondar($virada_quant * $virada_preco2);
 
                 ?>
                 
@@ -240,10 +240,10 @@
                         <td> R$ <?php echo $sonho_receita; ?> </td>
                     </tr>
                     <tr>
-                        <td class="italic"> Pão Doce </td>
-                        <td> R$ <?php echo $doce_preco; ?> </td>
-                        <td> R$ <?php echo $doce_preco2; ?> </td>
-                        <td> R$ <?php echo $doce_receita; ?> </td>
+                        <td class="italic"> Pão virada </td>
+                        <td> R$ <?php echo $virada_preco; ?> </td>
+                        <td> R$ <?php echo $virada_preco2; ?> </td>
+                        <td> R$ <?php echo $virada_receita; ?> </td>
                     </tr>
                 </table>
             </section>
@@ -254,7 +254,7 @@
                 
                 <?php
                     //tabela 5 - receita total
-                    $receitaTotal = $rosca_receita + $cacetinho_receita + $queijo_receita + $sonho_receita + $doce_receita;
+                    $receitaTotal = $rosca_receita + $cacetinho_receita + $queijo_receita + $sonho_receita + $virada_receita;
                     $lucro = $receitaTotal - $custosTotais;
                 ?>
                 
