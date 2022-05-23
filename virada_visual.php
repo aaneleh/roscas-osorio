@@ -196,7 +196,7 @@
                     </div> 
                     &nbsp+&nbsp
                     <div class="imagem_pequena img_container">
-                        <img title="<?php echo "$farinha g de farinha"?>" alt="farinha" src="images/virada/farinha.png"></img>
+                        <img title="<?php echo "$farinha2 g de farinha"?>" alt="farinha" src="images/virada/farinha.png"></img>
                     </div> 
                     &nbsp+&nbsp
                     <div class="imagem_pequena img_container">
@@ -277,7 +277,7 @@
                     </div> 
                     &nbsp+&nbsp
                     <div class="imagem_pequena img_container">
-                        <img title="<?php echo "aquecer óleo"?> "alt="temperatura" src="images/virada/final.PNG"></img>
+                        <img title="<?php echo "cuecas viradas no açucar"?> "alt="cuecas viradas no açucar" src="images/virada/final.PNG"></img>
                     </div> 
                     &nbsp → &nbsp
                     <div class="imagem_pequena img_container">
