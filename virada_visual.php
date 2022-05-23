@@ -48,143 +48,247 @@
             $farinha = 20;
             $farinha =ceil($farinha /21.6666666667);
         }
-            $acucar = $farinha * 2;
-            $sal = (round($farinha / 3 ,PHP_ROUND_HALF_UP));
-            $acucarEcanela = $farinha;
-            $vinagre = (round($farinha / 3 ,PHP_ROUND_HALF_UP));
-            $fermento = ceil($farinha / 3);
+            $acucar = ($farinha * 20)*12;
+            $sal = (round($farinha / 3 ,PHP_ROUND_HALF_UP))*3;
+            $acucarEcanela = $farinha*60;
+            $vinagre = (round($farinha / 3 ,PHP_ROUND_HALF_UP))*15;
+            $fermento = ceil($farinha / 3)*4;
             $oleo = 1;
             $ovo =  ceil($farinha / 3);
-            $margarina = ceil($farinha / 3);
-            $leite = (round($farinha / 2 ,PHP_ROUND_HALF_UP));
-                $rendimento = round($farinha * 21.6666666667);
-                $preparo = ceil($rendimento / 3 + 7);
-                $cozimento = ceil(($rendimento / 3) + 12);
+            $margarina = ceil($farinha / 3)*10;
+            $leite = (round($farinha / 2 ,PHP_ROUND_HALF_UP))*125;
+            $rendimento = round($farinha * 21.6666666667);
+            $preparo = ceil($rendimento / 3 + 7);
+            $cozimento = ceil(($rendimento / 3) + 12);
+            $farinha2 = $farinha*120;
 
     ?>
 
     <!-- MAIN -->
     <main>
-        <h1 class="title">CUECA VIRADA</h1>
+        <h1 class="title">Cueca Virada</h1>
 
         <div class="receita">
-            <p> Rendimento:         <?php echo $rendimento ?>   Cuecas Viradas </p>
-            <p> Tempo de preparo:   <?php echo $preparo ?>      min </p>
-            <p> Tempo de cozimento: <?php echo $cozimento ?>    min </p>
-            <br>
+            <ul>
+                <li class="receita_linha">
+                    <p>
+                        <?php echo $rendimento ?>
+                        &nbsp
+                        <div class="imagem_pequena img_container">
+                            <img alt="cuecas viradas" src="images/virada/cuecavirada.jpg"></img>
+                        </div>
+                    </p>
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <p>
+                        <?php echo $preparo ?> min
+                        &nbsp
+                        <div class="imagem_pequena img_container">
+                            <img alt="de preparo" src="images/virada/misturar.gif"></img>
+                        </div>
+                    </p>
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <p>
+                        <?php echo $cozimento ?> min
+                        &nbsp
+                        <div class="imagem_pequena img_container">
+                            <img alt="de cozimento" src="images/virada/panelaOleo.jpg"></img>
+                        </div>
+                    </p>
+                </li>
+            </ul>
 
             <h3 class="subtitle">  Ingredientes: </h3>
             <ul>
-                <li> <?php echo $farinha ?> Xícara(s) de Farinha de Trigo</li>
-                <li> <?php echo $acucar ?> Colher(es) de sopa de Açúcar </li>
-                <li> <?php echo $sal ?> Colher(es) de chá de Sal </li>
-                <li> <?php echo $leite ?> 1/2 Xícara(s) de Leite</li>
-                <li> <?php echo $margarina ?> Colher(es) de sopa de Margarina</li>
-                <li> <?php echo $acucarEcanela ?> Xícara(s) de Açúcar com Canela </li>
-                <li> <?php echo $vinagre ?> Colher(es) de sopa de Vinagre</li>
-                <li> <?php echo $fermento ?> Colher(es) de sopa de Fermeto em pó </li>
-                <li> <?php echo $oleo ?> Garrafa de Óleo </li>
-                <li> <?php echo $ovo ?> Ovo(s) </li>
-
+                <li class="receita_linha">
+                    <?php echo $fermento ?>g
+                    &nbsp
+                    <div class="imagem_pequena img_container">
+                        <img alt="Gramas de fermento biológico " src="images/virada/fermento.png"></img>
+                    </div>
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <p>
+                    <?php echo $acucar ?>g 
+                    &nbsp
+                    <div class="imagem_pequena img_container">
+                        <img alt="Gramas de açucar" src="images/virada/acucar.jpg"></img>
+                    </div>
+                    </p>
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <?php echo $margarina ?>g               
+                    &nbsp
+                    <div class="imagem_pequena img_container">
+                        <img alt="margarina" src="images/virada/margarina.png"></img>
+                    </div>    
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <?php echo $sal ?>g   
+                    &nbsp
+                    <div class="imagem_pequena img_container">
+                        <img alt="sal" src="images/virada/sal.jpg"></img>
+                    </div>     
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <?php echo $farinha ?>g
+                    &nbsp
+                    <div class="imagem_pequena img_container">
+                        <img alt="farinha" src="images/virada/farinha.png"></img>
+                    </div>
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <?php echo $leite ?>ml
+                    &nbsp  
+                    <div class="imagem_pequena img_container">
+                        <img alt="leite" src="images/virada/leite.png"></img>
+                    </div>     
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <?php echo $vinagre ?>ml
+                    &nbsp  
+                    <div class="imagem_pequena img_container">
+                        <img alt="vinagre" src="images/virada/vinagre.jpg"></img>
+                    </div>     
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <?php echo $ovo ?> Unidade
+                    &nbsp  
+                    <div class="imagem_pequena img_container">
+                        <img alt="ovo" src="images/virada/leite.png"></img>
+                    </div>     
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <?php echo $oleo ?> Garrafa
+                    &nbsp  
+                    <div class="imagem_pequena img_container">
+                        <img alt="oleo" src="images/virada/óleo.jpg"></img>
+                    </div>     
+                </li>
+                <br>
+                <li class="receita_linha">
+                    <?php echo $acucarEcanela ?>g
+                    &nbsp  
+                    <div class="imagem_pequena img_container">
+                        <img alt="canela com açúcar" src="images/virada/canela.jpg"></img>
+                    </div>     
+                </li>
             </ul>
             <br>
-
+            
             <h3 class="subtitle">Preparo:</h3>
             <ol>
-            
-            <li> Junte em uma vasilha ou bacia os seguintes componetes: farinha, açucar, leite, sal, ovo, margarina, vinagre e fermento.</li>
-            <li> Misture até que não gurde mais (se ainecessário, colocar mais farinha para não grudar).</li>
-            <li> Em seguida abra a massa com um rolo em um superfície enfarinhada.</li>
-            <li> Corte as tirinhas do tamanho desejado(aconselhamos meio rolo de medida para o comprimento e o cabo de uma faca para a grossura).</li>
-            <li> Faça um corte no meio e passa um das pontas por dentro do corte.</li>
-            <li> Coloque em uma penala 1 litro de óleo.</li>
-            <li> Espere o Óleo ferver e então coloque para fritar </li>
-            <li> Depois de fritar coloque para descansar em papel toalha.</li>
-            <li> Polvilhar com Canela e Açúcar.</li>
-            <li> Agora é só servir e aproveitar. </li>
-            
-            </ol>
-            <br>
-            
-            <h3 class="subtitle"> Preços: </h3>
+                <li class="receita_linha">
+                    1.&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "recipiente"?>" alt="bacia" src="images/virada/bacia1.png"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "$farinha g de farinha"?>" alt="farinha" src="images/virada/farinha.png"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "$fermento g de fermento"?>" alt="fermento" src="images/virada/fermento.png"></img>
+                    </div>
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "$acucar g de açucar"?> "alt="acucar" src="images/virada/acucar.jpg"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "$leite ml de leite"?>" alt="leite" src="images/virada/leite.png"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "$vinagre ml de vinagre"?>" alt="vinagre" src="images/virada/vinagre.jpg"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "$margarina g de margarina"?>" alt="margarina" src="images/virada/margarina.png"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "$sal g de sal"?>" alt="sal" src="images/virada/sal.jpg"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "$ovo unidade"?>" alt="ovo" src="images/virada/ovo.png"></img>
+                    </div> 
+                    &nbsp → &nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="" alt="bacia1" src="images/virada/misturar.gif"></img>
+                    </div> 
+                </li>
+                <br>
 
-            <table>
-                <tr>
-                    <td class="italic">Ingrediente</td>
-                    <td class="italic">Mercado 1 (Rissul)</td>
-                    <td class="italic">Mercado 2 (Asun)</td>
-                    <td class="italic">Mercado 3 (Carrefur)</td>
-                </tr>
-                <tr>
-                    <td class="italic"> Farinha de Trigo</td> 
-                    <td> R$<?php echo $farinha * 0.51; $total1 = $farinha * 0.51;?> </td>
-                    <td> R$<?php echo $farinha * 0.57; $total2 = $farinha * 0.57;?> </td>
-                    <td> R$<?php echo $farinha * 0.68; $total3 = $farinha * 0.68;?> </td>
-                </tr>
-                <tr>
-                    <td class="italic"> Açúcar   </td>
-                    <td> R$<?php echo $acucar * 0.05; $total1+= $acucar * 0.05 ?> </td>
-                    <td> R$<?php echo $acucar * 0.05; $total2+= $acucar * 0.05 ?> </td>
-                    <td> R$<?php echo $acucar * 0.05; $total3+= $acucar * 0.05 ?> </td>
-                </tr>
-                <tr>
-                    <td class="italic"> Fermento    </td>
-                    <td> R$<?php echo $fermento * 0.14; $total1+= $fermento * 0.14 ?> </td>
-                    <td> R$<?php echo $fermento * 0.16; $total2+= $fermento * 0.16 ?> </td>
-                    <td> R$<?php echo $fermento * 0.13; $total3+= $fermento * 0.13 ?> </td>
-                </tr>
-                <tr>
-                    <td class="italic"> Sal      </td>
-                    <td> R$<?php echo $sal * 0.01; $total1+= $sal * 0.01 ?> </td>
-                    <td> R$<?php echo $sal * 0.01; $total2+= $sal * 0.01 ?> </td>
-                    <td> R$<?php echo $sal * 0.01; $total3+= $sal * 0.01 ?> </td>
-                </tr>
-                <tr>
-                    <td class="italic"> Margarina     </td>
-                    <td> R$<?php echo $margarina * 0.17; $total1+= $margarina * 0.75?> </td>
-                    <td> R$<?php echo $margarina * 0.18; $total2+= $margarina * 0.60?> </td>
-                    <td> R$<?php echo $margarina * 0.13; $total3+= $margarina * 0.50?> </td>
-                </tr>
-                <tr>
-                    <td class="italic"> Canela </td> 
-                    <td> R$<?php echo $acucarEcanela * 11.07; $total1 = $acucarEcanela * 11.07 ?> </td>
-                    <td> R$<?php echo $acucarEcanela * 8.38; $total2 = $acucarEcanela * 8.38 ?> </td>
-                    <td> R$<?php echo $acucarEcanela * 5.72; $total3 = $acucarEcanela * 5.72 ?> </td>
-                </tr>
-                <tr>
-                    <td class="italic"> Óleo </td> 
-                    <td> R$<?php echo $oleo * 9.49; $total1 = $oleo * 9.49 ?> </td>
-                    <td> R$<?php echo $oleo * 9.99; $total2 = $oleo * 9.99 ?> </td>
-                    <td> R$<?php echo $oleo * 14.79; $total3 = $oleo * 14.79 ?> </td>
-                </tr>
-                <tr>
-                    <td class="italic"> Vinagre </td> 
-                    <td> R$<?php echo $vinagre * 0.07; $total1 = $vinagre *10.50 ?> </td>
-                    <td> R$<?php echo $vinagre * 0.07; $total2 = $vinagre *10.00 ?> </td>
-                    <td> R$<?php echo $vinagre * 0.11; $total3 = $vinagre *11.00 ?> </td>
-                </tr>
-                <tr>
-                    <td class="italic"> Leite </td> 
-                    <td> R$<?php echo $leite * 0.55; $total1 = $leite * 0.55 ?> </td>
-                    <td> R$<?php echo $leite * 0.55; $total2 = $leite * 0.55 ?> </td>
-                    <td> R$<?php echo $leite * 0.59; $total3 = $leite * 0.59 ?> </td>
-                </tr>
-                <tr>
-                    <td class="italic"> Ovos </td> 
-                    <td> R$<?php echo $ovo * 0.83; $total1 = $ovo *10.50 ?> </td>
-                    <td> R$<?php echo $ovo * 0.75; $total2 = $ovo *10.00 ?> </td>
-                    <td> R$<?php echo $ovo * 0.90; $total3 = $ovo *11.00 ?> </td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td> R$<?php echo round($total1,2) ?> </td>
-                    <td> R$<?php echo round($total2,2) ?> </td>
-                    <td> R$<?php echo round($total3,2) ?> </td>
-                </tr>
-            </table>
+                <li class="receita_linha">
+                    2.&nbsp
+                    +&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "Sovar"?>" alt="sovando" src="images/virada/sovar.gif"></img>
+                    </div>
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "Esticar"?> "alt="esticando" src="images/virada/rolo.PNG"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "Cortar"?>" alt="cortando" src="images/virada/corte.PNG"></img>
+                    </div> 
+                    &nbsp → &nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="Dobrar" alt="froma" src="images/virada/dobrar.PNG"></img>
+                    </div> 
+                </li>
+                <br>
+
+                <li class="receita_linha">
+                    3. &nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "Esquentar óleo"?>" alt="óleo" src="images/virada/panela2.jpg"></img>
+                    </div>
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "aquecer óleo"?> "alt="temperatura" src="images/virada/term.jpg"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "fritar"?>" alt="fritando" src="images/virada/panelaOleo.jpg"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="descansar" alt="froma" src="images/virada/forma.jpg"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "misturar"?> "alt="Canela Com açúcar" src="images/virada/mistura1.PNG"></img>
+                    </div> 
+                    &nbsp+&nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "aquecer óleo"?> "alt="temperatura" src="images/virada/final.PNG"></img>
+                    </div> 
+                    &nbsp → &nbsp
+                    <div class="imagem_pequena img_container">
+                        <img title="<?php echo "Sevir"?> "alt="temperatura" src="images/virada/Fim.PNG"></img>
+                    </div> 
+                </li>
+                <br>
+            </ol>
             <br><br>
         </div>
-
     </main>
+    <script src="sidebar.js"></script>
 </body>
 </html>
